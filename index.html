@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create a New Post</h2>
+
+      <!-- Form for creating a new post -->
+      <form id="postForm" class="post-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter post title" required />
+
+        <label for="content">Content:</label>
+        <textarea
+          id="content"
+          rows="4"
+          placeholder="Enter post content"
+          required
+        ></textarea>
+
+        <button type="submit">Add Post</button>
+      </form>
+
+      <!-- Container to display posts -->
+      <div class="post-container" id="postContainer"></div>
+    </div>
+
+    <!-- Theme toggle button -->
+    <button class="theme-toggle-btn" id="themeToggleBtn">Toggle Theme</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
